@@ -1,12 +1,19 @@
-iconst -2
-fconst -3.307
-flt
-iconst -20
+fconst 12.175
 top
-ilt
-iconst -9
+fconst 0.428
+fdiv
+fconst -14.006
+f2i
+top
+fconst -12.625
+fconst -8.812
+fconst 5.268
+fconst -13.235
+feq
+ineg
 top
 top
-iconst 19
+top
+iconst -10
 top
 top

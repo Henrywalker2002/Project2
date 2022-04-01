@@ -60,6 +60,9 @@ void calculatorInt(Stack* st, int count, char op) {
 		res = int(int(val) / int(val2));
 		break;
 	case '%':
+		if (val2 == 0) {
+			throw DivideByZero(count);
+		}
 		res = int(val) % int(val2);
 		break;
 	case '&':
@@ -234,7 +237,12 @@ void Myclass::running(std::string filename) {
 			}
 			float temp = st->top(count);
 			st->pop();
-			st->push(-temp, 0, count);
+			if (temp == 0.000000) {
+				st->push(0, 0, count);
+			}
+			else {
+				st->push(-temp, 0, count);
+			}
 		}
 		else if (act == "iand") {
 			calculatorInt(st, count, '&');
