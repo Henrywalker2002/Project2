@@ -134,7 +134,12 @@ void calculatorFloat(Stack* st, int count, char op) {
 		res = -1;
 		break;
 	}
-	st->push(res, 1, count);
+	if (op == '=' || op == '!' || op == '>' || op == '<') {
+		st->push(res, 0, count);
+	}
+	else {
+		st->push(res, 1, count);
+	}
 }
 
 void Myclass::running(std::string filename) {

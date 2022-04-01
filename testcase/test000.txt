@@ -1,14 +1,12 @@
-iconst 7
+iconst -2
+fconst -3.307
+flt
+iconst -20
 top
-iconst 7
+ilt
+iconst -9
 top
-fconst 13.126
-fgt
-idiv
-fsub
-iload 38
-idiv
 top
-fconst -12.422
+iconst 19
 top
 top
